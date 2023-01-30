@@ -80,9 +80,9 @@ const loginCtrl = async (req, res) => {
         })
 
         return res.cookie('access_token', token, {
-            httpOnly: false,
-            sameSite: 'none',
-            secure: process.env.NODE_ENV === 'production'
+            httpOnly: true,
+            SameSite: 'none',
+            Secure: 'false'
         }).status(200).send({ msg: "LOGIN_SUCCESS", status: true })
 
 
