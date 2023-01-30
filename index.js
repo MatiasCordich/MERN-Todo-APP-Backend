@@ -15,7 +15,7 @@ const app = express()
 // Middlewares
 
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://mern-task-manager-frontend.vercel.app")
+  res.setHeader("Access-Control-Allow-Origin", "https://task-manager-backend-r5ig.onrender.com/")
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
